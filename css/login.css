@@ -1,0 +1,152 @@
+:root {
+    --Azul-petróleo: #0D2C4A;
+    --Azul-oscuro: #1C3F5D;
+    --Azul-cielo: #5DA9E9;
+    --Blanco: #ffffff;
+    --Gris: #EDE9E6;
+}
+
+/* Reinicio general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.6;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: var(--Gris);
+}
+
+/* === Encabezado (igual al index) === */
+.inicio-encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--Azul-petróleo);
+    padding: 8px 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.inicio-encabezado img {
+    height: 50px;
+    object-fit: contain;
+}
+
+.botones-inicio {
+    display: flex;
+    gap: 20px;
+}
+
+.botones-inicio a {
+    background-color: var(--Azul-petróleo);
+    color: var(--Blanco);
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.botones-inicio a:hover {
+    background-color: var(--Azul-oscuro);
+}
+
+/* === Contenedor del login === */
+.login-container {
+    max-width: 400px;
+    background-color: var(--Blanco);
+    margin: 126px auto;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: var(--Azul-petróleo);
+}
+
+/* === Campos === */
+.form-login .campo {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-login label {
+    font-weight: bold;
+    color: var(--Azul-petróleo);
+    margin-bottom: 5px;
+}
+
+.form-login input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+.form-login input:focus {
+    border-color: var(--Azul-cielo);
+    outline: none;
+}
+
+/* === Checkbox recordar === */
+.recordar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* === Botón === */
+.btn-login {
+    background-color: var(--Azul-petróleo);
+    color: var(--Blanco);
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-login:hover {
+    background-color: var(--Azul-oscuro);
+}
+
+/* === Enlace a registro === */
+.mensaje-registro {
+    text-align: center;
+    margin-top: 15px;
+    color: #555;
+}
+
+.mensaje-registro a {
+    color: var(--Azul-cielo);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.mensaje-registro a:hover {
+    text-decoration: underline;
+}
+
+/* === Pie de página === */
+.pie-pagina {
+    background-color: var(--Azul-petróleo);
+    color: var(--Blanco);
+    text-align: center;
+    padding: 15px;
+    margin-top: 250px;
+    font-size: 14px;
+}

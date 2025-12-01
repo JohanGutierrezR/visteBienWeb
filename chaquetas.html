@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Catálogo - VisteBien</title>
+
+    <link rel="stylesheet" href="css/catalogo.css">
+    <link rel="icon" type="image/png" href="img/pagina de inicio/favicon-32x32.png">
+</head>
+
+<body>
+
+<header>
+    <div class="inicio-encabezado">
+        <img src="img/pagina de inicio/Logo.png" alt="">
+
+        <div class="botones-inicio">
+
+            <a href="index.html">Inicio</a>
+
+            <select id="catalogoSelector" onchange="if(this.value) window.location.href=this.value;">
+                <option value="chaquetas.html">Chaquetas</option>
+                <option value="catalogo.html">Catálogo</option>
+                <option value="vestidos.html">Vestidos</option>
+                <option value="pantalones.html">Pantalones</option>
+                <option value="deportivo.html">Deportivo</option>
+                <option value="camisas_camisetas.html">Camisas Camisetas</option>
+            </select>
+
+            <a id="loginLink" href="login.html">Inicio de sesión</a>
+
+        <a id="carritoLink" href="carrito.html" style="display:none;">
+    🛒 Carrito 
+</a>
+
+
+            <a id="adminLink" href="admin.html" style="display:none;">Panel Administrador</a>
+
+            <select id="rolSelector">
+                <option value="invitado">Invitado</option>
+                <option value="cliente">Usuario</option>
+                <option value="admin">Administrador</option>
+            </select>
+
+        </div>
+    </div>
+</header>
+
+<div class="contenedor-catalogo">
+
+    <h1>Catálogo de Chaquetas</h1>
+
+    <div class="grid-productos" id="listaProductos"></div>
+
+</div>
+
+<footer>
+    <div class="footer-contenido">
+        <img src="img/pagina de inicio/Logo.png" alt="Logo VisteBien">
+        <p>© 2025 VisteBien — Moda con propósito. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+<script src="js/chaquetas.js"></script>
+<script src="js/roles.js"></script>
+
+</body>
+</html>

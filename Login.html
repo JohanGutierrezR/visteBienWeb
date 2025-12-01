@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión - VisteBien</title>
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+</head>
+<body>
+    <!-- Encabezado igual que el index -->
+    <div class="inicio-encabezado">
+        <a href="index.html">
+            <img src="img/pagina de inicio/Logo.png" alt="Logo VisteBien - Ir a Inicio">
+        </a>
+        <div class="botones-inicio">
+            <a href="index.html">Inicio</a>
+            <a href="register.html">Registrarse</a>
+            <a href="catalogo.html">Catálogo</a>
+        </div>
+    </div>
+
+    <!-- Formulario de inicio de sesión -->
+    <main class="login-container">
+        <h1>Iniciar Sesión</h1>
+        <form class="form-login">
+            <div class="campo">
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+            </div>
+
+            <div class="campo">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" placeholder="********" required>
+            </div>
+
+            <div class="recordar">
+                <label>
+                    <input type="checkbox" name="recordar"> Recordar usuario
+                </label>
+            </div>
+
+            <button type="submit" class="btn-login">Iniciar sesión</button>
+
+            <p class="mensaje-registro">
+                ¿No tienes una cuenta? <a href="register.html">Regístrate aquí</a>
+            </p>
+        </form>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="pie-pagina">
+        <p>&copy; 2025 VisteBien. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

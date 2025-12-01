@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="css/carrito.css">
+</head>
+<body>
+
+<header>
+    <div class="inicio-encabezado">
+        <img src="img/pagina de inicio/Logo.png" alt="">
+
+        <div class="botones-inicio">
+            <a href="index.html">Inicio</a>
+            <a href="catalogo.html">Catálogo</a>
+
+            <a id="carritoLink" href="carrito.html">🛒 Carrito (<span id="carritoCantidad">0</span>)</a>
+            <a id="adminLink" href="admin.html" style="display:none;">Panel Administrador</a>
+
+            <select id="rolSelector">
+                <option value="cliente">Usuario</option>
+                <option value="admin">Administrador</option>
+            </select>
+        </div>
+    </div>
+</header>
+
+
+<h1 class="titulo-carrito">Carrito de Compras</h1>
+
+<div id="carritoContainer" class="carrito-container">
+</div>
+
+<div class="carrito-total">
+    Total: <span id="totalPagar">$0</span>
+</div>
+
+
+
+<script src="js/roles.js"></script>
+<script src="js/carrito.js"></script>
+
+</body>
+</html>

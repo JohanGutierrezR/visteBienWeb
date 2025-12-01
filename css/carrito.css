@@ -1,0 +1,216 @@
+
+:root {
+    --Azul-petróleo: #0D2C4A;
+    --Azul-oscuro: #1C3F5D;
+    --Azul-cielo: #5DA9E9;
+    --Blanco: #ffffff;
+    --Gris: #EDE9E6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    line-height: 1.6;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* --- Estilos del Encabezado (Barra de Navegación delgada) --- */
+.inicio-encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--Azul-petróleo);
+    padding: 8px 30px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+    position: fixed; 
+    top: 0;          
+    left: 0;         
+    width: 100%;    
+    z-index: 1000;
+}
+
+.inicio-encabezado img {
+    height: 50px; 
+    object-fit: contain;
+}
+
+.botones-inicio {
+    display: flex;
+    gap: 20px;
+}
+
+.botones-inicio a {
+ 
+    background-color: var(--Azul-petróleo);
+    color: var(--Blanco);
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    text-decoration: none; 
+}
+
+.botones-inicio a:hover {
+    background-color: var(--Azul-oscuro);
+}
+
+.titulo-carrito {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.carrito-container {
+    max-width: 900px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.producto-carrito {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+.producto-carrito img {
+    width: 90px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.info-producto {
+    flex: 1;
+}
+
+.borrar-btn {
+    background: red;
+    padding: 8px 15px;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.carrito-total {
+    max-width: 900px;
+    margin: 20px auto;
+    font-size: 24px;
+    text-align: right;
+}
+
+/* ====== Pie de Página ====== */
+footer {
+    background-color: var(--Azul-petróleo);
+    color: var(--Blanco);
+    padding: 10px 10px;   
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer img {
+    height: 45px;         
+    margin-bottom: 6px;
+    object-fit: contain;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;      
+}
+/* --- Vista previa de imágenes --- */
+.image-preview {
+    grid-column: span 2;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.image-preview img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 2px solid var(--Azul-petróleo);
+}
+
+
+/* Rol y Catálogo */
+#rolSelector{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--Azul-petróleo);
+    color: var(--Blanco);
+
+    padding: 10px 1px;        
+    border-radius: 6px;        
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;              
+    outline: none;
+
+    transition: background-color 0.25s ease,
+                box-shadow 0.18s ease;
+
+    -webkit-appearance: none;  
+    -moz-appearance: none;
+    appearance: none;
+
+    min-width: 154px;
+    text-align: center;
+
+}
+
+
+/* Hover */
+#rolSelector:hover,
+#catalogoSelector:hover {
+    background-color: var(--Azul-oscuro);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.10);
+}
+
+/* Focus */
+#rolSelector:focus,
+#catalogoSelector:focus {
+    box-shadow: 0 0 0 3px rgba(93,169,233,0.18);
+}
+
+/* Opciones internas */
+#rolSelector option,
+#catalogoSelector option {
+    background-color: var(--Blanco);
+    color: var(--Azul-petróleo);
+    padding: 6px 10px;
+}
+ #catalogoSelector{
+
+    background-color: var(--Azul-petróleo);
+    color: var(--Blanco);
+    padding: 10px 1px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;              
+    outline: none;
+    transition: background-color 0.25s ease,
+    box-shadow 0.18s ease;
+    -webkit-appearance: none;  
+    -moz-appearance: none;
+    appearance: none;
+    min-width: 154px;
+    text-align: center;
+ }

@@ -1,0 +1,249 @@
+:root {
+    --Azul-petróleo: #0D2C4A;
+    --Azul-oscuro: #1C3F5D;
+    --Azul-cielo: #5DA9E9;
+    --Blanco: #ffffff;
+    --Gris: #EDE9E6;
+}
+
+/* Eliminar márgenes globales */
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--Blanco);
+}
+
+/* ------------------------------
+   ENCABEZADO
+------------------------------ */
+.inicio-encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--Azul-petróleo);
+    padding: 8px 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.inicio-encabezado img {
+    height: 50px;
+    object-fit: contain;
+}
+
+.botones-inicio {
+    display: flex;
+    gap: 20px;
+}
+
+.botones-inicio a {
+    background-color: var(--Azul-petróleo);
+    color: var(--Blanco);
+    border: 2px solid transparent;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s;
+    text-decoration: none;
+}
+
+.botones-inicio a:hover {
+    background-color: var(--Azul-oscuro);
+    border-color: var(--Azul-cielo);
+}
+
+/* ------------------------------
+   PANEL ADMIN
+------------------------------ */
+.admin-panel {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.admin-panel h1 {
+    text-align: center;
+    color: var(--Azul-petróleo);
+    margin-bottom: 10px;
+}
+
+.admin-panel p {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #444;
+}
+
+/* ------------------------------
+   FORMULARIO
+------------------------------ */
+.product-form {
+    background: var(--Gris);
+    padding: 60px;
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.product-form label {
+    font-weight: bold;
+    color: var(--Azul-petróleo);
+}
+
+.product-form input,
+.product-form textarea,
+.product-form select {
+    padding: 10px;
+    border: 2px solid var(--Azul-petróleo);
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.3s;
+    width: 100%;
+}
+
+.product-form input:focus,
+.product-form textarea:focus,
+.product-form select:focus {
+    border-color: var(--Azul-cielo);
+}
+
+.product-form textarea {
+    resize: none;
+    grid-column: span 2;
+}
+
+.btn-guardar {
+    grid-column: span 2;
+    padding: 12px;
+    background-color: var(--Azul-petróleo);
+    color: var(--Blanco);
+    font-weight: bold;
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-guardar:hover {
+    background-color: var(--Azul-oscuro);
+}
+
+/* ------------------------------
+   TABLA DE PRODUCTOS
+------------------------------ */
+.tabla-productos {
+    margin-top: 40px;
+}
+
+.tabla-productos h2 {
+    color: var(--Azul-petróleo);
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+table th {
+    background-color: var(--Azul-petróleo);
+    color: var(--Blanco);
+    padding: 12px;
+    text-align: left;
+}
+
+table td {
+    padding: 12px;
+    border-bottom: 1px solid #ccc;
+}
+
+table tr:hover td {
+    background-color: var(--Azul-cielo);
+    color: var(--Blanco);
+}
+
+table img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* Botones acción */
+.btn-editar,
+.btn-eliminar {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--Blanco);
+}
+
+.btn-editar {
+    background-color: var(--Azul-cielo);
+}
+
+.btn-eliminar {
+    background-color: #C0392B;
+}
+
+.btn-editar:hover {
+    background-color: var(--Azul-oscuro);
+}
+
+.btn-eliminar:hover {
+    background-color: #A83224;
+}
+
+/* ------------------------------
+   FOOTER (REDUCIDO)
+------------------------------ */
+footer {
+    background-color: var(--Azul-petróleo);
+    color: var(--Blanco);
+    padding: 10px 10px;   
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer img {
+    height: 45px;         
+    margin-bottom: 6px;
+    object-fit: contain;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;      
+}
+/* --- Vista previa de imágenes --- */
+.image-preview {
+    grid-column: span 2;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.image-preview img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 2px solid var(--Azul-petróleo);
+}
+
+/* Corrección de espacio en blanco sobre el footer */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1; /* Ocupa todo el espacio y evita márgenes blancos */
+}
