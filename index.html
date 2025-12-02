@@ -2,33 +2,36 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>VisteBien</title>
-      <link rel="icon" type="image/png" href="img/pagina de inicio/favicon-32x32.png">
-    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="icon" type="image/png" href="img/pagina de inicio/favicon-32x32.png">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
+
+    <!-- HEADER -->
     <header>
-       <div class="inicio-encabezado">
-            <img src="img/pagina de inicio/logo.png" alt="">
+        <div class="inicio-encabezado">
+            <img src="img/pagina de inicio/logo.png" alt="Logo VisteBien">
+
             <div class="botones-inicio">
 
-             <!-- Menú Catálogo -->
-        <select id="catalogoSelector">
-            <option value="">Catálogo</option>
-            <option value="vestidos.html">Vestidos</option>
-            <option value="chaquetas.html">Chaquetas</option>
-            <option value="pantalones.html">Pantalones</option>
-            <option value="deportivo.html">Deportivo</option>
-            <option value="camisas_camisetas.html">Camisas Camisetas</option>
-        </select>
+                <!-- Menú Catálogo -->
+                <select id="catalogoSelector">
+                    <option value="">Catálogo</option>
+                    <option value="vestidos.html">Vestidos</option>
+                    <option value="chaquetas.html">Chaquetas</option>
+                    <option value="pantalones.html">Pantalones</option>
+                    <option value="deportivo.html">Deportivo</option>
+                    <option value="camisas_camisetas.html">Camisas Camisetas</option>
+                </select>
 
                 <a href="login.html" id="loginLink">Inicio de sesión</a>
                 <a href="carrito.html" id="carritoLink">Carrito de compras</a>
                 <a href="Admin.html" id="adminLink" class="oculto">Panel Admin</a>
 
-                <!-- Selector de Rol -->
+                <!-- Selector Rol -->
                 <select id="rolSelector">
                     <option value="invitado">Invitado</option>
                     <option value="cliente">Usuario</option>
@@ -36,13 +39,15 @@
                 </select>
             </div>
         </div>
+
         <div class="contenido-inicio">
             <div class="zoom-image"></div>
+
             <div class="banner-texto">
-                <p>"VisteBien: transforma tu estilo, destaca tu esencia. Elegancia que se nota, comodidad que se
-                    siente."</p>
+                <p>"VisteBien: transforma tu estilo, destaca tu esencia. Elegancia que se nota, comodidad que se siente."</p>
             </div>
         </div>
+
         <div class="presentacion-bloque">
             <div class="presentacion-imagen">
                 <img src="img/pagina de inicio/contenido 2.png" alt="Exhibición de ropa en tienda">
@@ -57,6 +62,7 @@
                 <a href="catalogo.html" class="boton-catalogo">Catálogo</a>
             </div>
         </div>
+
         <div class="seccion-catalogo">
             <h2>Nuestro catálogo</h2>
 
@@ -75,7 +81,7 @@
                 </div>
 
                 <div class="categoria-item">
-                    <img src="img/pagina de inicio//imagen2.png" alt="Pantalones">
+                    <img src="img/pagina de inicio/imagen2.png" alt="Pantalones">
                     <h3>Pantalones</h3>
                     <p>Desde la oficina hasta la aventura, tenemos el par que se adapta a tu día.</p>
                 </div>
@@ -98,14 +104,18 @@
 
             </div>
         </div>
-         <footer>
-            <div class="footer-contenido">
-                <img src="img/pagina de inicio/logo.png" alt="Logo VisteBien">
-                <p>© 2025 VisteBien — Moda con propósito. Todos los derechos reservados.</p>
-                <p>Contacto: <a href="mailto:contacto@vistebien.com">contacto@vistebien.com</a></p>
-            </div>
-        </footer>
     </header>
-             <script src="js/index.js"></script>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-contenido">
+            <img src="img/pagina de inicio/logo.png" alt="Logo VisteBien">
+            <p>© 2025 VisteBien — Moda con propósito. Todos los derechos reservados.</p>
+            <p>Contacto: <a href="mailto:contacto@vistebien.com">contacto@vistebien.com</a></p>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="js/index.js"></script>
 </body>
 </html>
