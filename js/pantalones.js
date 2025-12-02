@@ -4,12 +4,12 @@
 const productos = [
     { id: 1, nombre: "Pantalón Beige claro", precio: 75000, imagen: "img/Catalogo Pantalones/pantalon.jpg" },
     { id: 2, nombre: "Pantalón Gris", precio: 950000, imagen: "img/Catalogo Pantalones/pantalon1.jpg" },
-    { id: 3, nombre: "Pantalón Casual", precio: 95000, imagen: "img/catalogo/PantalonCasual.jpg" },
+    { id: 3, nombre: "Pantalón Casual", precio: 95000, imagen: "img/Catalogo/PantalonCasual.jpg" },
     { id: 4, nombre: "Pantalón Marrón", precio: 75000, imagen: "img/Catalogo Pantalones/pantalon2.jpg" },
     { id: 5, nombre: "Pantalón Verde oliva", precio: 75000, imagen: "img/Catalogo Pantalones/pantalon3.jpg" },
     { id: 6, nombre: "Pantalón Gris claro", precio: 75000, imagen: "img/Catalogo Pantalones/pantalon4.jpg" },
     { id: 7, nombre: "Pantalón Beige", precio: 95000, imagen: "img/Catalogo Pantalones/pantalon5.jpg" },
-    { id: 8, nombre: "Pantalón Cargo Unisex", precio: 70000, imagen: "img/catalogo/PantalonCargoUnisex.jpg" }
+    { id: 8, nombre: "Pantalón Cargo Unisex", precio: 70000, imagen: "img/Catalogo/PantalonCargoUnisex.jpg" }
 ];
 
 

@@ -4,12 +4,12 @@
 const productos = [
     { id: 1, nombre: "Vestido Floral", precio: 120000, imagen: "img/Catalogo/VestidoFloral.jpg" },
     { id: 2, nombre: "Chaqueta de Cuero", precio: 260000, imagen: "img/Catalogo/ChaquetaCuero.jpg" },
-    { id: 3, nombre: "Pantalón Casual", precio: 95000, imagen: "img/catalogo/PantalonCasual.jpg" },
-    { id: 4, nombre: "Camiseta Básica", precio: 35000, imagen: "img/catalogo/CamisetaBasica.jpg" },
-    { id: 5, nombre: "Sudadera Deportiva", precio: 78000, imagen: "img/catalogo/SudaderaDeportiva.jpg" },
+    { id: 3, nombre: "Pantalón Casual", precio: 95000, imagen: "img/Catalogo/PantalonCasual.jpg" },
+    { id: 4, nombre: "Camiseta Básica", precio: 35000, imagen: "img/Catalogo/CamisetaBasica.jpg" },
+    { id: 5, nombre: "Sudadera Deportiva", precio: 78000, imagen: "img/Catalogo/SudaderaDeportiva.jpg" },
     { id: 6, nombre: "Vestido Elegante Noche", precio: 185000, imagen: "img/Catalogo/VestidoEleganteNoche.jpg" },
     { id: 7, nombre: "Chaqueta Jean Oversize", precio: 145000, imagen: "img/Catalogo/ChaquetaJeanOversize.jpg" },
-    { id: 8, nombre: "Pantalón Cargo Unisex", precio: 110000, imagen: "img/catalogo/PantalonCargoUnisex.jpg" }
+    { id: 8, nombre: "Pantalón Cargo Unisex", precio: 110000, imagen: "img/Catalogo/PantalonCargoUnisex.jpg" }
 ];
 
 

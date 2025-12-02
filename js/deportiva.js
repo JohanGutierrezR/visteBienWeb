@@ -6,7 +6,7 @@ const productos = [
     { id: 2, nombre: "Buzo Cafe", precio: 70000, imagen: "img/Catalogo Deportiva/deportivo1.jpg" },
     { id: 3, nombre: "Legis Rosa", precio: 50000, imagen: "img/Catalogo Deportiva/deportiva2.jpg" },
     { id: 4, nombre: "Legis Gris", precio: 50000, imagen: "img/Catalogo Deportiva/deportiva3.jpg" },
-    { id: 5, nombre: "Sudadera Deportiva", precio: 78000, imagen: "img/catalogo/SudaderaDeportiva.jpg" },
+    { id: 5, nombre: "Sudadera Deportiva", precio: 78000, imagen: "img/Catalogo/SudaderaDeportiva.jpg" },
     { id: 6, nombre: "Sudadera Mujer", precio: 80000, imagen: "img/Catalogo Deportiva/deportiva4.jpg" },
     { id: 7, nombre: "Chaqueta Deportiva", precio: 60000, imagen: "img/Catalogo Deportiva/deportiva5.jpg" },
     { id: 8, nombre: "Sudadera Buzo", precio: 80000, imagen: "img/Catalogo Deportiva/deportiva6.jpg" }

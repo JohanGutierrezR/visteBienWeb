@@ -5,7 +5,7 @@ const productos = [
     { id: 1, nombre: "Camiseta Azul Oscuro", precio: 35000, imagen: "img/Catalogo Camisas y Camisetas/camisa1.jpg" },
     { id: 2, nombre: "Camisas Varios Colores", precio: 60000, imagen: "img/Catalogo Camisas y Camisetas/camisa2.jpg" },
     { id: 3, nombre: "Camisa Polo", precio: 60000, imagen: "img/Catalogo Camisas y Camisetas/camisa3.jpg" },
-    { id: 4, nombre: "Camiseta Básica", precio: 35000, imagen: "img/catalogo/CamisetaBasica.jpg" },
+    { id: 4, nombre: "Camiseta Básica", precio: 35000, imagen: "img/Catalogo/CamisetaBasica.jpg" },
     { id: 5, nombre: "Camiseta Negra Hombre", precio: 35000, imagen: "img/Catalogo Camisas y Camisetas/camisa4.jpg" },
     { id: 6, nombre: "Camiseta Negra Mujer", precio: 30000, imagen: "img/Catalogo Camisas y Camisetas/camisa5.jpg" },
     { id: 7, nombre: "Camisa Mujer Rojo", precio: 60000, imagen: "img/Catalogo Camisas y Camisetas/camisa6.jpg" },
